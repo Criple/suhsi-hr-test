@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     {{ Form::label('status', 'Статус заказа') }}
-                    {{ Form::select('status', array('0' => '0', '10' => '10', '20' => '20'), $order->status, $attributes = ['class'=>'form-control']) }}
+                    {{ Form::select('status', array('0' => 'Новый', '10' => 'Подтвержден', '20' => 'Завершен'), $order->status, $attributes = ['class'=>'form-control']) }}
                 </div>
                 <div class="form-group row">
                     <div class="col-3">

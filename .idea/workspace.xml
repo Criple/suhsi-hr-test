@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af8931e8-3433-4b70-9bde-12c0bcdea4b8" name="Default Changelist" comment="commit" />
+    <list default="true" id="af8931e8-3433-4b70-9bde-12c0bcdea4b8" name="Default Changelist" comment="commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ordersEdit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ordersEdit.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -308,7 +311,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579416533426</updated>
       <workItem from="1579416543283" duration="50794000" />
-      <workItem from="1656562833382" duration="3678000" />
+      <workItem from="1656562833382" duration="4495000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656564040041</created>
@@ -324,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656566387963</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit">
+      <created>1656566691042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656566691042</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
