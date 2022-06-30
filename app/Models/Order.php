@@ -10,6 +10,25 @@ class Order extends Model
     protected $fillable = ['client_email', 'status'];
 
     /**
+     * Gets status label
+     * @return string
+     */
+    public function getStatusLabel()
+    {
+        switch ($this->status)
+        {
+            case 0:
+                return 'Новый';
+            case 10:
+                return 'Подтвержден';
+            case 20:
+                return 'Завершен';
+        }
+
+        return 'Новый';
+    }
+
+    /**
      *
      */
     public function partner()

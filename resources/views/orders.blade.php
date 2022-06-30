@@ -23,7 +23,7 @@
                             <a href="/orders/edit/{{ $order->id }}">{{ $order->id }}</a>
                         </td>
                         <td>
-                            {{ $order->status }}
+                            {{ $order->getStatusLabel() }}
                         </td>
                         <td>
                             {{ $order->client_email }}
