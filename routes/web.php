@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -11,7 +13,7 @@
 |
 */
 
-Route::get('/', 'WeatherController@index')->name('index');
-Route::get('/orders', 'OrdersController@index')->name('orders_list');
-Route::get('/orders/edit/{id}', 'OrdersController@edit')->name('orders_edit');
-Route::post('/orders/update/{order}', 'OrdersController@update')->name('orders_update');
+Route::get('/', 'App\Http\Controllers\WeatherController@index')->name('index');
+Route::get('/orders', 'App\Http\Controllers\OrdersController@index')->name('orders_list');
+Route::get('/orders/edit/{id}', 'App\Http\Controllers\OrdersController@edit')->name('orders_edit');
+Route::post('/orders/update/{order}', 'App\Http\Controllers\OrdersController@update')->name('orders_update');

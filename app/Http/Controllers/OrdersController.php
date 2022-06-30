@@ -2,29 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use App\Orders;
-use App\Partners;
-use App\Products;
+use App\Models\Order;
+use App\Models\Partner;
+use App\Models\Product;
 use App\Http\Requests\UpdateOrders;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 
 class OrdersController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function index()
     {
-        $orders = Orders::all();
+        $orders = Order::all();
+
         return view('orders', ['orders' => $orders]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return Response
      */
     public function create()
     {
@@ -34,8 +36,8 @@ class OrdersController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param Request $request
+     * @return Response
      */
     public function store(Request $request)
     {
@@ -45,10 +47,10 @@ class OrdersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Orders  $orders
-     * @return \Illuminate\Http\Response
+     * @param Order $orders
+     * @return Response
      */
-    public function show(Orders $orders)
+    public function show(Order $orders)
     {
         //
     }
@@ -56,13 +58,13 @@ class OrdersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Orders  $orders
-     * @return \Illuminate\Http\Response
+     * @param Order $orders
+     * @return Response
      */
     public function edit($id)
     {
-        $order = Orders::find($id);
-        $partners = Partners::all();
+        $order = Order::find($id);
+        $partners = Partner::all();
 
         return view('ordersEdit', [
             'order' => $order,
@@ -74,42 +76,28 @@ class OrdersController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \App\Http\Requests\UpdateOrders  $request
-     * @param  \App\Orders  $orders
-     * @return \Illuminate\Http\Response
+     * @param UpdateOrders $request
+     * @param Order $orders
+     * @return Response
      */
-    public function update(UpdateOrders $request, Orders $order)
+    public function update(UpdateOrders $request, Order $order)
     {
-        //dd($request->status);
-
         $order->client_email = $request->client_email;
-        $partner = Partners::find($request->partner);
-        $order->partner()->associate($partner);//->associate($order);
-        //$order->update([
-            //'client_email' => $request->client_email,
-            //'partner' => $partner,
-            //'status' => $request->status,
-        //]);
-        //$order->partner()->save($partner);
-        //dd($partner);
-        //$order->partner($partner->toArray());// = $partner->toArray();
-        //$order->partner()->associate($partner);
+        $partner = Partner::find($request->partner);
+        $order->partner()->associate($partner);
         $order->status = $request->status;
-
-        //$order->update($request->all());
-        //$partner->save();
         $order->save();
-        //return $request->all();
+
         return redirect('/orders');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Orders  $orders
-     * @return \Illuminate\Http\Response
+     * @param Order $orders
+     * @return Response
      */
-    public function destroy(Orders $orders)
+    public function destroy(Order $orders)
     {
         //
     }

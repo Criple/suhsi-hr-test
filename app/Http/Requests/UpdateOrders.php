@@ -24,9 +24,9 @@ class UpdateOrders extends FormRequest
     public function rules()
     {
         return [
-            'client_email' => 'required',
-            'partner' => 'required',
-            'status' => 'required'
+            'client_email' => 'required|email',
+            'partner' => 'required|integer',
+            'status' => 'required|integer'
         ];
     }
 }

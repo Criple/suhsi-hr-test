@@ -28,7 +28,7 @@
                     <div class="row d-flex flex-wrap justify-content-center">
                         <div class="col-6 temp_container">
                             <div class="row flex-column justify-content-center">
-                                <div class="temp_img d-flex flex-column justify-content-center">
+                                <div class="temp_img">
                                     <img class="weather-img" src="https://yastatic.net/weather/i/icons/blueye/color/svg/{{ $weatherIcon }}.svg" alt="Weather img" />
                                 </div>
                                 <div class="temp_degrees d-flex justify-content-center">{{ $temp }}°</div>

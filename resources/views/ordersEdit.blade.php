@@ -29,7 +29,8 @@
                     {{ Form::label('partner', 'Партнер') }}
                     <select id="partner" name="partner" class="form-control">
                         @foreach($partners as $partner)
-                            <option value="{{ $partner['id'] }}" @if($order['partner']['id'] == $partner['id']) selected @endif>{{ $partner['name'] }}</option>
+
+                            <option value="{{ $partner->id }}" @if($order->partner->id == $partner->id) selected @endif>{{ $partner->name }}</option>
                         @endforeach
                     </select>
                 </div>
