@@ -6,8 +6,7 @@
 
     <title>@yield('title')</title>
 
-    <link href='/css/app.css' rel="stylesheet">
-    <link href='/css/style.css' rel="stylesheet">
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
     @yield('stylesheets')
 </head>
 <body>
@@ -39,7 +38,5 @@
     </div>
 
     @yield('javascripts')
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="/js/app.js"></script>
 </body>
 </html>
