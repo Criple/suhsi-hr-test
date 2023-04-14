@@ -4,24 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af8931e8-3433-4b70-9bde-12c0bcdea4b8" name="Default Changelist" comment="commit">
-      <change afterPath="$PROJECT_DIR$/resources/views/parts/navbar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parts/weather_data.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/parts/weather_empty.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WeatherController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/WeatherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/WeatherService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/weather.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/mainLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mainLayout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/orders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/ordersEdit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ordersEdit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/weather.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/weather.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    <list default="true" id="af8931e8-3433-4b70-9bde-12c0bcdea4b8" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,7 +249,7 @@
       <workItem from="1656577947173" duration="316000" />
       <workItem from="1656596551288" duration="747000" />
       <workItem from="1681446387012" duration="224000" />
-      <workItem from="1681448354126" duration="5069000" />
+      <workItem from="1681448354126" duration="5158000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656564040041</created>
@@ -302,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656568361962</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fix">
+      <created>1681453452602</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681453452602</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +312,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
