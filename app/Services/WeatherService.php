@@ -2,42 +2,37 @@
 
 namespace App\Services;
 
+use Illuminate\Support\Facades\Http;
+
 class WeatherService
 {
-    private $api_key;
-    private $omskLat;
-    private $omskLon;
 
     /**
      * WeatherService constructor.
      */
     public function __construct()
     {
-        $this->api_key = config('weather.api_key');
-        $this->omskLat = config('weather.omsk_lat');
-        $this->omskLon = config('weather.omsk_lon');
+
     }
+
 
     /**
      * Gets the weather data from yandex
-     * @param $client
-     * @return array|bool
+     * @param $lat
+     * @param $lon
+     * @return array|null
      */
-    public function getWeatherData($client){
-        $res = $client->request(
-            'GET',
-            'https://api.weather.yandex.ru/v2/forecast/?lat='. $this->omskLat . '&lon='. $this->omskLon,
-            [
-                'headers' => [
-                    'X-Yandex-API-Key' => $this->api_key,
-                ],
-                'verify' => false
-            ]
-        );
-        if ($res->getStatusCode() == 200){
-            $weatherData = json_decode($res->getBody()->getContents());
+    public function getWeatherData($lat, $lon){
+        $res = Http::withHeaders([
+            'X-Yandex-API-Key' => config('weather.api_key')
+        ])->get(config('weather.api_url'), [
+            'lat' => $lat,
+            'lon' => $lon
+        ]);
+        if ($res->successful()){
+            $weatherData =  $res->json();
 
-            return array(
+            return [
                 'weatherIcon' => $weatherData->fact->icon,
                 'temp' => $weatherData->fact->temp,
                 'feelsLike' => $weatherData->fact->feels_like,
@@ -46,10 +41,10 @@ class WeatherService
                 'windDegree' => $weatherData->fact->wind_dir,
                 'pressure' => $weatherData->fact->pressure_mm,
                 'humidity' => $weatherData->fact->humidity
-            );
+            ];
         }
 
-        return false;
+        return null;
     }
 
 }

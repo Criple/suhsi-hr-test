@@ -12,28 +12,8 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="side-menu col-2">
-                <div class="row flex-column justify-content-center">
-                    <div class="menu-header">
-                        <p>Меню</p>
-                    </div>
-                    <nav class="navbar navbar-default">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="{{ route('index') }}">Погода</a>
-                            </li>
-                            <li>
-                                <a href="{{ route('orders_list') }}">Заказы</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="col-10">
-                <div class="row">
-                    @yield('content')
-                </div>
-            </div>
+            @include('parts.navbar')
+            @yield('content')
         </div>
     </div>
 

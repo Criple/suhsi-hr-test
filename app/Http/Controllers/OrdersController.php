@@ -18,7 +18,7 @@ class OrdersController extends Controller
      */
     public function index()
     {
-        $orders = Order::all();
+        $orders = Order::simplePaginate(15);
 
         return view('orders', ['orders' => $orders]);
     }
@@ -58,12 +58,11 @@ class OrdersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param Order $orders
+     * @param Order $order
      * @return Response
      */
-    public function edit($id)
+    public function edit(Order $order)
     {
-        $order = Order::find($id);
         $partners = Partner::all();
 
         return view('ordersEdit', [
@@ -88,7 +87,7 @@ class OrdersController extends Controller
         $order->status = $request->status;
         $order->save();
 
-        return redirect('/orders');
+        return redirect(route('orders_list'));
     }
 
     /**

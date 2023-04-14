@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\OrdersController;
+use App\Http\Controllers\WeatherController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +15,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\WeatherController@index')->name('index');
-Route::get('/orders', 'App\Http\Controllers\OrdersController@index')->name('orders_list');
-Route::get('/orders/edit/{id}', 'App\Http\Controllers\OrdersController@edit')->name('orders_edit');
-Route::post('/orders/update/{order}', 'App\Http\Controllers\OrdersController@update')->name('orders_update');
+Route::get('/', [WeatherController::class, 'index'])->name('index');
+Route::prefix('orders')->group(function (){
+    Route::get('/', [OrdersController::class, 'index'])->name('orders_list');
+    Route::get('/edit/{order}', [OrdersController::class, 'edit'])->name('orders_edit');
+    Route::post('/update/{order}', [OrdersController::class, 'update'])->name('orders_update');
+});
+

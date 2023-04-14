@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="af8931e8-3433-4b70-9bde-12c0bcdea4b8" name="Default Changelist" comment="commit">
+      <change afterPath="$PROJECT_DIR$/resources/views/parts/navbar.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parts/weather_data.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/parts/weather_empty.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OrdersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeatherController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WeatherController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Services/WeatherService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/WeatherService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/weather.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/weather.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/mainLayout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/mainLayout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/orders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/ordersEdit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/ordersEdit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/weather.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/weather.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +59,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.0">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
@@ -177,12 +194,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="nodejs_package_manager_path" value="npm" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/mark/phpstormprojects/suhsi-hr-test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -216,15 +241,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.build" />
         <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -239,6 +264,8 @@
       <workItem from="1656562833382" duration="4732000" />
       <workItem from="1656577947173" duration="316000" />
       <workItem from="1656596551288" duration="747000" />
+      <workItem from="1681446387012" duration="224000" />
+      <workItem from="1681448354126" duration="5069000" />
     </task>
     <task id="LOCAL-00001" summary="commit">
       <created>1656564040041</created>
@@ -279,7 +306,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -291,32 +318,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit" />
     <option name="LAST_COMMIT_MESSAGE" value="commit" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="736" y="432" key="ComposerInitDialogKey" timestamp="1656596612614">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="736" y="432" key="ComposerInitDialogKey/0.0.1920.1040@0.0.1920.1040" timestamp="1656596612614" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1656596606876">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1656596606876" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1656596606876">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1656596606876" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1656596606875">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1656596606875" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1656596606876">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1656596606876" />
   </component>
 </project>
